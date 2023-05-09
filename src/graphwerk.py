@@ -84,7 +84,17 @@ iter_count = int(len(pd)/4)
 print(iter_count)
 iter = 0
 
+tot_length = len(pd)
+train_end = int(round(tot_length*0.8))
 
-for x in range(len(pd)-4):
+# for x in range(80-4):
+#    graphwerk(iter, iter+12)
+#    iter = iter + 2
+
+# for x in range(80,101):
+#    graphwerk(iter, iter+12)
+#    iter = iter + 2
+
+for x in range(train_end,len(pd)-4):
    graphwerk(iter, iter+12)
    iter = iter + 2
